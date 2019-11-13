@@ -1,0 +1,96 @@
+body {
+  font-family : Calibri;
+  background-color : #ffffff;
+}
+img {
+  max-width: 100%;
+}
+figcaption {
+  display: block;
+  text-align: center;
+  font-weight:bold;
+}
+p {
+  text-align: justify;
+}
+a, a:visited { 
+  color: #224b8d; 
+}
+.content {
+  width : 800px;
+  padding : 25px 50px;
+  margin : 25px auto;
+  background-color : #fff;
+  box-shadow: 0px 0px 2px #999;
+  border-radius: 0px;
+}
+.center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footnote {
+  text-align : center;
+  font-size : 14px;
+  margin: 20px auto;
+}
+#authors {
+  font-size : 18px;
+  text-align : center;
+  margin : 20px;
+}
+#authors a { margin-left: 0px; }
+h1 {
+  text-align : center;
+  font-family : Calibri;
+  font-size : 25px;
+}
+h2 {
+  text-align : center;
+  font-family : Calibri;
+}
+td {
+  text-align : center;
+}
+code {
+  display : block;
+  padding : 10px;
+  margin : 10px 10px;
+}
+p code {
+  display : inline;
+  padding : 0;
+  margin : 0;
+}
+table.extra {
+  table-layout: fixed;
+  width: 100%;
+}
+table.extra td {
+  vertical-align: middle;
+}
+table.extra img {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  max-height: 180;
+}
+a.button {
+  width:auto;
+  font-size:16px;
+  font-weight:bold;
+  text-decoration:none;
+  text-align:center;
+  padding:8px 10px 8px 10px;
+  margin:auto;
+  color:#212529;
+  background-color:#ffe066;
+  border-radius:10px;
+}
+
+a.button:hover {
+  background-color:#fab005;
+  font-weight:bold;
+  color:#fff;
+}

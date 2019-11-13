@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  </script>
+  <title>MarioNETte: Few-shot Face Reenactment Preserving Identity of Unseen Targets</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
+  </script>
+</head>
+<body>
+  <!--<div class="center">-->
+  <!--This page uses a template from the <a href="http://hi.cs.waseda.ac.jp/~iizuka/projects/completion/">project page</a> of Satoshi Iizuka et al, <i>"Globally and Locally Consistent Image Completion"</i>.-->
+  <!--</div>-->
+  <div class="content">
+    <h1>MarioNETte: Few-shot Face Reenactment <br> Preserving Identity of Unseen Targets</h1>
+    <p id="authors">
+      Sungjoo Ha <sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+      Martin Kersner <sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+      Beomsu Kim <sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+      Seokjun Seo <sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+      Dongyoung Kim <sup>†</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+      <br><br>
+      <a href="http://hyperconnect.com/", target="_blank">Hyperconnect</a><br>Seoul, Republic of Korea
+      <br>In <a href="https://aaai.org/Conferences/AAAI-20/", target="_blank">AAAI 2020</a>
+    </p>
+    <img src="images/overview.png" width="600" border="0" class="center">
+    <br><br>
+    <div class="center">
+      <a class="button" href="">Paper (TBA)</a>
+      <a class="button" href="">Supplementary (TBA)</a>
+    </div>
+    <div class="footnote">
+      * Equal contribution, listed in alphabetical order. &nbsp;&nbsp;&nbsp;&nbsp; † Corresponding author.
+    </div>
+  </div>
+  <div class="content">
+    <h2>Abstract</h2>
+    <p>When there is a mismatch between the target identity and the driver identity, face reenactment suffers severe degradation in the quality of the result, especially in a few-shot setting. The identity preservation problem, where the model loses the detailed information of the target leading to a defective output, is the most common failure mode. The problem has several potential sources such as the identity of the driver leaking due to the identity mismatch, or dealing with unseen large poses. To overcome such problems, we introduce components that address the mentioned problem: image attention block, target feature alignment, and landmark transformer. Through attending and warping the relevant features, the proposed architecture, called MarioNETte, produces high-quality reenactments of unseen identities in a few-shot setting. In addition, the landmark transformer dramatically alleviates the identity preservation problem by isolating the expression geometry through landmark disentanglement. Comprehensive experiments are performed to verify that the proposed framework can generate highly realistic faces, outperforming all other baselines, even under a significant mismatch of facial characteristics between the target and the driver.</p>
+  </div>
+
+  <div class="content">
+    <h2> Demo videos </h2>
+    TBA
+  </div>
+
+  <div class="content">
+    <h2> One-shot reenactment examples</h2>
+    <p, class="center">
+      <p, class="center"> First row's image is used as an one-shot target image, and the leftmost image is provided as a driver image. </p>
+      <h3> MarioNETte-LT </h3>
+      <img src="images/reenact_examples_marionette_lt.png", class="center">
+      <h3> MarioNETte </h3>
+      <img src="images/reenact_examples_marionette.png", class="center">
+    </p>
+  </div>
+
+  <div class="content">
+    <h2> Methods </h2>
+    <img src="images/architecture.png", width="800", class="center">
+    <br> <br>
+    Our model reenacts the face of unseen targets in a few-shot manner, especially focusing on the preservation of target identity. The model does not require any fine-tuning procedure, thus can be deployed with a single model for reenacting aribtrary identity. We adopted three novel components for compositing our model:
+    <ul>
+      <li> <i> Image attention block</i>, for efficiently blending relevant style information from multiple target images;
+      <li> <i> Target feature alignment</i>, which enables model to inject fine-grained style information of target images into the generated image; 
+      <li> <i> Landmark transformer</i>, for adjusting the structural differences of two identities' landmarks by disentangling facial landmarks into the identity geometry and the expression geometry.
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>Citation</h3>
+    To refer our work, please cite our paper as follows:
+    <code>@inproceedings{MarioNETte:AAAI2020,<br>
+      &nbsp;&nbsp;author = {Sungjoo Ha and Martin Kersner and Beomsu Kim and Seokjun Seo and Dongyoung Kim},<br>
+      &nbsp;&nbsp;title = {MarioNETte: Few-shot Face Reenactment Preserving Identity of Unseen Targets},<br>
+      &nbsp;&nbsp;booktitle = {Proceedings of the National Conference on Artificial Intelligence (AAAI)},<br>
+      &nbsp;&nbsp;year = {2020}<br>
+    }</code>
+  </div>
+  <div class="center">
+  This page uses a template from the <a href="http://vision.snu.ac.kr/project_pages/cvpr18_noh/views/">project page</a> of Junhyug et al, <i>"Improving Occlusion and Hard Negative Handling for Single-Stage Pedestrian Detectors"</i>.
+  </div>
+</body>
+</html>
